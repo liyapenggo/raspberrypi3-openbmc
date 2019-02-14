@@ -1,0 +1,30 @@
+DEBUG: Executing python function sstate_task_prefunc
+DEBUG: Python function sstate_task_prefunc finished
+DEBUG: Executing python function do_populate_sysroot
+DEBUG: Executing shell function sysroot_stage_all
+0 blocks
+DEBUG: Shell function sysroot_stage_all finished
+DEBUG: Executing python function sysroot_strip
+DEBUG: Python function sysroot_strip finished
+DEBUG: Executing python function relocatable_binaries_preprocess
+DEBUG: Python function relocatable_binaries_preprocess finished
+DEBUG: Executing shell function relocatable_native_pcfiles
+DEBUG: Shell function relocatable_native_pcfiles finished
+DEBUG: Python function do_populate_sysroot finished
+DEBUG: Executing python function do_qa_staging
+NOTE: QA checking staging
+DEBUG: Python function do_qa_staging finished
+DEBUG: Executing python function sstate_task_postfunc
+NOTE: Using umask 0o002 (not 22) for sstate packaging
+DEBUG: Preparing tree /home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/sysroot-destdir/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native for packaging at /home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/sstate-build-populate_sysroot/recipe-sysroot-native
+DEBUG: Executing python function sstate_hardcode_path
+NOTE: Removing hardcoded paths from sstate package: 'grep -Irl -e /home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot -e /home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native -e /home/roly/openbmc1/build/tmp/hosttools /home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/sstate-build-populate_sysroot/ | xargs grep -l -e '/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native' -e '/home/roly/openbmc1/build/tmp/hosttools' | tee /home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/sstate-build-populate_sysroot/fixmepath | xargs --no-run-if-empty sed -i -e 's:/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native:FIXMESTAGINGDIRHOST:g' -e 's:/home/roly/openbmc1/build/tmp/hosttools:FIXME_HOSTTOOLS_DIR:g''
+DEBUG: Python function sstate_hardcode_path finished
+DEBUG: Executing shell function sstate_create_package
+DEBUG: Shell function sstate_create_package finished
+DEBUG: Executing python function sstate_sign_package
+DEBUG: Python function sstate_sign_package finished
+DEBUG: Executing python function sstate_hardcode_path_unpack
+DEBUG: Python function sstate_hardcode_path_unpack finished
+DEBUG: Staging files from /home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/sysroot-destdir/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native to /home/roly/openbmc1/build/tmp/sysroots-components/x86_64/texinfo-dummy-native
+DEBUG: Python function sstate_task_postfunc finished

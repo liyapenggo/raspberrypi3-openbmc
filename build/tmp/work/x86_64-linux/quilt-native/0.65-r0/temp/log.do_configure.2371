@@ -1,0 +1,80 @@
+DEBUG: Executing shell function autotools_preconfigure
+DEBUG: Shell function autotools_preconfigure finished
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_configure
+NOTE: Running ./configure  --build=x86_64-linux 		  --host=x86_64-linux 		  --target=x86_64-linux 		  --prefix=/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr 		  --exec_prefix=/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr 		  --bindir=/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/bin 		  --sbindir=/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/sbin 		  --libexecdir=/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/libexec 		  --datadir=/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/share 		  --sysconfdir=/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/etc 		  --sharedstatedir=/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/com 		  --localstatedir=/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/var 		  --libdir=/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/lib 		  --includedir=/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/include 		  --oldincludedir=/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/include 		  --infodir=/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/share/info 		  --mandir=/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/share/man 		  --disable-silent-rules 		  --disable-dependency-tracking 		   --with-perl='/usr/bin/env perl' --with-patch=patch --disable-static  --disable-nls 
+configure: WARNING: unrecognized options: --disable-silent-rules, --disable-dependency-tracking, --disable-static
+checking for a BSD-compatible install... /home/roly/openbmc1/build/tmp/hosttools/install -c
+checking whether #! works in shell scripts... yes
+checking for bash... (cached) /bin/bash
+checking whether /bin/bash quoting works... yes
+checking for gcp... no
+checking for cp... /home/roly/openbmc1/build/tmp/hosttools/cp
+checking for gdate... no
+checking for date... /home/roly/openbmc1/build/tmp/hosttools/date
+checking whether /home/roly/openbmc1/build/tmp/hosttools/date --rfc-822 works... yes
+checking for perl... /usr/bin/env perl
+configure: WARNING: /usr/bin/env perl does not exist
+checking for grep... /home/roly/openbmc1/build/tmp/hosttools/grep
+checking whether /home/roly/openbmc1/build/tmp/hosttools/grep -q works... yes
+checking whether /home/roly/openbmc1/build/tmp/hosttools/grep understands (foo|bar)... yes
+checking for tail... /home/roly/openbmc1/build/tmp/hosttools/tail
+checking whether /home/roly/openbmc1/build/tmp/hosttools/tail -n works... yes
+checking for tr... /home/roly/openbmc1/build/tmp/hosttools/tr
+checking whether /home/roly/openbmc1/build/tmp/hosttools/tr understands a-z ... yes
+checking for stat... /home/roly/openbmc1/build/tmp/hosttools/stat
+checking whether /home/roly/openbmc1/build/tmp/hosttools/stat -c '%h' works... yes
+checking for sed... /home/roly/openbmc1/build/tmp/hosttools/sed
+checking whether /home/roly/openbmc1/build/tmp/hosttools/sed understands (foo|bar)... yes
+checking for gawk... /home/roly/openbmc1/build/tmp/hosttools/gawk
+checking whether /home/roly/openbmc1/build/tmp/hosttools/gawk supports sub... yes
+checking for pod2man... /home/roly/openbmc1/build/tmp/hosttools/pod2man
+checking for column... no
+configure: WARNING: Using internal column mechanism.  Use option '--with-column' to override
+checking for getopt... /home/roly/openbmc1/build/tmp/hosttools/getopt
+checking for getopt --long syntax... yes
+checking for mktemp... /home/roly/openbmc1/build/tmp/hosttools/mktemp
+checking whether /home/roly/openbmc1/build/tmp/hosttools/mktemp -d works... yes
+checking for diff... /home/roly/openbmc1/build/tmp/hosttools/diff
+checking for patch... patch
+configure: WARNING: patch does not exist
+checking the version of /home/roly/openbmc1/build/tmp/hosttools/diff... 3.3
+checking the version of patch... 2.7.5
+checking for find... /home/roly/openbmc1/build/tmp/hosttools/find
+checking whether /home/roly/openbmc1/build/tmp/hosttools/find -path works... yes
+checking whether /home/roly/openbmc1/build/tmp/hosttools/find -print0 works... yes
+checking for xargs... /home/roly/openbmc1/build/tmp/hosttools/xargs
+checking whether /home/roly/openbmc1/build/tmp/hosttools/xargs -0 works... yes
+checking for diffstat... /home/roly/openbmc1/build/tmp/hosttools/diffstat
+checking for diffstat version... 1.61
+checking for sendmail... no
+configure: WARNING: Using internal sendmail mechanism.  Use option '--with-sendmail' to override
+checking for gmd5sum... no
+checking for md5sum... /home/roly/openbmc1/build/tmp/hosttools/md5sum
+checking for msgmerge... no
+checking for msgfmt... no
+checking for xgettext... no
+checking for msguniq... no
+checking for msgcat... no
+configure: Building without natural language support
+checking for rpmbuild... no
+checking for rpm... no
+configure: WARNING: rpmbuild not found, some optional functionalities will be missing
+configure: creating ./config.status
+config.status: creating Makefile
+configure: WARNING: unrecognized options: --disable-silent-rules, --disable-dependency-tracking, --disable-static
+
+quilt version 0.65 configured.
+
+Using '/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr' for installation prefix.
+
+Report bugs to quilt-dev@nongnu.org
+DEBUG: Shell function do_configure finished
+DEBUG: Executing python function do_qa_configure
+NOTE: Checking autotools environment for common misconfiguration
+NOTE: Checking configure output for unrecognised options
+DEBUG: Python function do_qa_configure finished
+DEBUG: Executing shell function autotools_postconfigure
+DEBUG: Shell function autotools_postconfigure finished

@@ -1,0 +1,31 @@
+DEBUG: Executing python function clean_recipe_sysroot
+DEBUG: Python function clean_recipe_sysroot finished
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['http', 'ftp.gnu.org', '/gnu/m4/m4-1.4.18.tar.gz', '', '', OrderedDict()] comparing ['bzr', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'ftp.gnu.org', '/gnu/m4/m4-1.4.18.tar.gz', '', '', OrderedDict()] comparing ['cvs', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'ftp.gnu.org', '/gnu/m4/m4-1.4.18.tar.gz', '', '', OrderedDict()] comparing ['git', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'ftp.gnu.org', '/gnu/m4/m4-1.4.18.tar.gz', '', '', OrderedDict()] comparing ['gitsm', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'ftp.gnu.org', '/gnu/m4/m4-1.4.18.tar.gz', '', '', OrderedDict()] comparing ['hg', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'ftp.gnu.org', '/gnu/m4/m4-1.4.18.tar.gz', '', '', OrderedDict()] comparing ['osc', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'ftp.gnu.org', '/gnu/m4/m4-1.4.18.tar.gz', '', '', OrderedDict()] comparing ['p4', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'ftp.gnu.org', '/gnu/m4/m4-1.4.18.tar.gz', '', '', OrderedDict()] comparing ['svn', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: Trying Upstream
+DEBUG: Fetching http://ftp.gnu.org/gnu/m4/m4-1.4.18.tar.gz using command '/usr/bin/env wget -t 2 -T 30 --passive-ftp --no-check-certificate -P /home/roly/openbmc1/build/downloads 'http://ftp.gnu.org/gnu/m4/m4-1.4.18.tar.gz''
+DEBUG: Fetcher accessed the network with the command /usr/bin/env wget -t 2 -T 30 --passive-ftp --no-check-certificate -P /home/roly/openbmc1/build/downloads 'http://ftp.gnu.org/gnu/m4/m4-1.4.18.tar.gz'
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:abstract=/tmp/dbus-UCnMQnFqAM"; export SSH_AUTH_SOCK="/run/user/1000/keyring/ssh"; export PATH="/home/roly/openbmc1/scripts/native-intercept:/home/roly/openbmc1/build/tmp/work/x86_64-linux/m4-native/1.4.18-r0/recipe-sysroot-native/usr/bin/texinfo-dummy-native:/home/roly/openbmc1/scripts:/home/roly/openbmc1/build/tmp/work/x86_64-linux/m4-native/1.4.18-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/roly/openbmc1/build/tmp/work/x86_64-linux/m4-native/1.4.18-r0/recipe-sysroot-native/usr/bin:/home/roly/openbmc1/build/tmp/work/x86_64-linux/m4-native/1.4.18-r0/recipe-sysroot-native/usr/sbin:/home/roly/openbmc1/build/tmp/work/x86_64-linux/m4-native/1.4.18-r0/recipe-sysroot-native/usr/bin:/home/roly/openbmc1/build/tmp/work/x86_64-linux/m4-native/1.4.18-r0/recipe-sysroot-native/sbin:/home/roly/openbmc1/build/tmp/work/x86_64-linux/m4-native/1.4.18-r0/recipe-sysroot-native/bin:/home/roly/openbmc1/bitbake/bin:/home/roly/openbmc1/build/tmp/hosttools"; export HOME="/home/roly"; /usr/bin/env wget -t 2 -T 30 --passive-ftp --no-check-certificate -P /home/roly/openbmc1/build/downloads 'http://ftp.gnu.org/gnu/m4/m4-1.4.18.tar.gz' --progress=dot -v
+URL transformed to HTTPS due to an HSTS policy
+--2019-02-13 08:45:55--  https://ftp.gnu.org/gnu/m4/m4-1.4.18.tar.gz
+Resolving ftp.gnu.org (ftp.gnu.org)... 2001:470:142:3::b, 209.51.188.20
+Connecting to ftp.gnu.org (ftp.gnu.org)|2001:470:142:3::b|:443... failed: Network is unreachable.
+Connecting to ftp.gnu.org (ftp.gnu.org)|209.51.188.20|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2006643 (1.9M) [application/x-gzip]
+Saving to: ‘/home/roly/openbmc1/build/downloads/m4-1.4.18.tar.gz’
+

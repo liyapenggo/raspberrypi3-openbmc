@@ -1,0 +1,32 @@
+DEBUG: Executing python function clean_recipe_sysroot
+DEBUG: Python function clean_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Searching for template.py in paths:
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/x86-64
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/x86-64
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/x86-64
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/
+DEBUG: Searching for COPYING in paths:
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/x86-64
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/x86-64
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/x86-64
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

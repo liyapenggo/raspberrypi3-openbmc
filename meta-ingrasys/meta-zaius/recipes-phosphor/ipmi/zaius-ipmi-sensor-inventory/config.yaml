@@ -1,0 +1,370 @@
+0x03:
+  sensorType: 0x0F
+  path: /xyz/openbmc_project/state/host0
+  sensorReadingType: 0x6F
+  serviceInterface: org.freedesktop.DBus.Properties
+  readingType: eventdata2
+  mutability: Mutability::Write|Mutability::Read
+  interfaces:
+    xyz.openbmc_project.State.Boot.Progress:
+      BootProgress:
+        Offsets:
+          0x13:
+            type: string
+            set: xyz.openbmc_project.State.Boot.Progress.ProgressStages.OSStart
+          0x00:
+            type: string
+            set: xyz.openbmc_project.State.Boot.Progress.ProgressStages.Unspecified
+          0x01:
+            type: string
+            set: xyz.openbmc_project.State.Boot.Progress.ProgressStages.MemoryInit
+          0x07:
+            type: string
+            set: xyz.openbmc_project.State.Boot.Progress.ProgressStages.PCIInit
+          0x14:
+            type: string
+            set: xyz.openbmc_project.State.Boot.Progress.ProgressStages.MotherboardInit
+          0x03:
+            type: string
+            set: xyz.openbmc_project.State.Boot.Progress.ProgressStages.SecondaryProcInit
+0x05:
+  sensorType: 0x1F
+  path: /xyz/openbmc_project/state/host0
+  sensorReadingType: 0x6F
+  serviceInterface: org.freedesktop.DBus.Properties
+  readingType: assertion
+  mutability: Mutability::Write|Mutability::Read
+  interfaces:
+    xyz.openbmc_project.State.OperatingSystem.Status:
+      OperatingSystemState:
+        Offsets:
+          0x02:
+            assert: xyz.openbmc_project.State.OperatingSystem.Status.OSStatus.PXEBoot
+            type: string
+          0x06:
+            assert: xyz.openbmc_project.State.OperatingSystem.Status.OSStatus.BootComplete
+            type: string
+          0x04:
+            assert: xyz.openbmc_project.State.OperatingSystem.Status.OSStatus.CDROMBoot
+            type: string
+          0x01:
+            assert: xyz.openbmc_project.State.OperatingSystem.Status.OSStatus.CBoot
+            type: string
+          0x03:
+            assert: xyz.openbmc_project.State.OperatingSystem.Status.OSStatus.DiagBoot
+            type: string
+          0x05:
+            assert: xyz.openbmc_project.State.OperatingSystem.Status.OSStatus.ROMBoot
+            type: string
+0x07:
+  sensorType: 0xC3
+  path: /xyz/openbmc_project/state/host0
+  sensorReadingType: 0x6F
+  serviceInterface: org.freedesktop.DBus.Properties
+  readingType: readingAssertion
+  mutability: Mutability::Write|Mutability::Read
+  interfaces:
+    xyz.openbmc_project.Control.Boot.RebootAttempts:
+      AttemptsLeft:
+        Offsets:
+          0xFF:
+            type: uint32_t
+0x21:
+  sensorType: 0x07
+  path: /system/chassis/motherboard/cpu0
+  sensorReadingType: 0x6F
+  serviceInterface: xyz.openbmc_project.Inventory.Manager
+  readingType: assertion
+  mutability: Mutability::Write|Mutability::Read
+  interfaces:
+    xyz.openbmc_project.State.Decorator.OperationalStatus:
+      Functional:
+        Prereqs:
+          0x07:
+            assert: true
+            deassert: false
+            type: bool
+        Offsets:
+          0x08:
+            assert: false
+            deassert: true
+            type: bool
+    xyz.openbmc_project.Inventory.Item:
+      Present:
+        Offsets:
+          0x07:
+            assert: true
+            deassert: false
+            type: bool
+0x6A:
+  sensorType: 0x07
+  path: /org/open_power/control/occ0
+  sensorReadingType: 0x09
+  serviceInterface: org.freedesktop.DBus.Properties
+  readingType: assertion
+  mutability: Mutability::Write|Mutability::Read
+  interfaces:
+    org.open_power.OCC.Status:
+      OccActive:
+        Offsets:
+          0x00:
+            assert: false
+            deassert: true
+            type: bool
+          0x01:
+            assert: true
+            deassert: false
+            type: bool
+0x71:
+  sensorType: 0x07
+  path: /system/chassis/motherboard/cpu1
+  sensorReadingType: 0x6F
+  serviceInterface: xyz.openbmc_project.Inventory.Manager
+  readingType: assertion
+  mutability: Mutability::Write|Mutability::Read
+  interfaces:
+    xyz.openbmc_project.State.Decorator.OperationalStatus:
+      Functional:
+        Prereqs:
+          0x07:
+            assert: true
+            deassert: false
+            type: bool
+        Offsets:
+          0x08:
+            assert: false
+            deassert: true
+            type: bool
+    xyz.openbmc_project.Inventory.Item:
+      Present:
+        Offsets:
+          0x07:
+            assert: true
+            deassert: false
+            type: bool
+0xBA:
+  sensorType: 0x07
+  path: /org/open_power/control/occ1
+  sensorReadingType: 0x09
+  serviceInterface: org.freedesktop.DBus.Properties
+  readingType: assertion
+  mutability: Mutability::Write|Mutability::Read
+  interfaces:
+    org.open_power.OCC.Status:
+      OccActive:
+        Offsets:
+          0x00:
+            assert: false
+            deassert: true
+            type: bool
+          0x01:
+            assert: true
+            deassert: false
+            type: bool
+0xFC:
+  sensorType: 0xCD
+  path: /system/chassis/pcie_card_e2b
+  sensorReadingType: 0x03
+  serviceInterface: xyz.openbmc_project.Inventory.Manager
+  readingType: assertion
+  mutability: Mutability::Write|Mutability::Read
+  interfaces:
+    xyz.openbmc_project.Inventory.Item:
+      Present:
+        Offsets:
+          0x01:
+            assert: true
+            deassert: false
+            type: bool
+
+0xB0: &fan_tach
+  sensorType: 0x04
+  path: /xyz/openbmc_project/sensors/fan_tach/fan0
+  sensorReadingType: 0x01
+  multiplierM: 100
+  offsetB: 0
+  bExp: 0
+  unit: xyz.openbmc_project.Sensor.Value.Unit.RPMS
+  scale: 0
+  rExp: 0
+  serviceInterface: org.freedesktop.DBus.Properties
+  readingType: readingData
+  interfaces:
+    xyz.openbmc_project.Sensor.Value:
+      Value:
+        Offsets:
+          0xFF:
+            type: int64_t
+0xB1:
+  <<: *fan_tach
+  path: /xyz/openbmc_project/sensors/fan_tach/fan1
+0xB2:
+  <<: *fan_tach
+  path: /xyz/openbmc_project/sensors/fan_tach/fan2
+0xB3:
+  <<: *fan_tach
+  path: /xyz/openbmc_project/sensors/fan_tach/fan3
+
+0xC0: &temperature
+  sensorType: 0x01
+  path: /xyz/openbmc_project/sensors/temperature/w1_inlet
+  sensorReadingType: 0x01
+  multiplierM: 235
+  offsetB: 0
+  bExp: 0
+  unit: xyz.openbmc_project.Sensor.Value.Unit.DegreesC
+  scale: -3
+  rExp: -3
+  serviceInterface: org.freedesktop.DBus.Properties
+  readingType: readingData
+  interfaces:
+    xyz.openbmc_project.Sensor.Value:
+      Value:
+        Offsets:
+          0xFF:
+            type: int64_t
+0xC1:
+  <<: *temperature
+  path: /xyz/openbmc_project/sensors/temperature/w1_exhaust_left
+0xC2:
+  <<: *temperature
+  path: /xyz/openbmc_project/sensors/temperature/w1_exhaust_right
+0xC3:
+  <<: *temperature
+  path: /xyz/openbmc_project/sensors/temperature/w1_exhaust_mid
+
+0xC4: &fanpwm
+  sensorType: 0x04
+  path: /xyz/openbmc_project/sensors/fan_tach/fan0
+  sensorReadingType: 0x01
+  multiplierM: 1
+  offsetB: 0
+  bExp: 0
+  mutability: Mutability::Write
+  serviceInterface: org.freedesktop.DBus.Properties
+  readingType: readingData
+  interfaces:
+    xyz.openbmc_project.Control.FanPwm:
+      Target:
+        Offsets:
+          0xFF:
+            type: uint64_t
+0xC5:
+  <<: *fanpwm
+  path: /xyz/openbmc_project/sensors/fan_tach/fan1
+0xC6:
+  <<: *fanpwm
+  path: /xyz/openbmc_project/sensors/fan_tach/fan2
+0xC7:
+  <<: *fanpwm
+  path: /xyz/openbmc_project/sensors/fan_tach/fan3
+
+0xD0: &voltage
+  sensorType: 0x02
+  path: /xyz/openbmc_project/sensors/voltage/p5v_aux
+  sensorReadingType: 0x01
+  multiplierM: 23
+  offsetB: 0
+  bExp: 0
+  unit: xyz.openbmc_project.Sensor.Value.Unit.Volts
+  scale: -3
+  rExp: -3
+  serviceInterface: org.freedesktop.DBus.Properties
+  readingType: readingData
+  interfaces:
+    xyz.openbmc_project.Sensor.Value:
+      Value:
+        Offsets:
+          0xFF:
+            type: int64_t
+0xD1:
+  <<: *voltage
+  path: /xyz/openbmc_project/sensors/voltage/p2v5_aux
+  multiplierM: 15
+  offsetB: 0
+  bExp: 0
+0xD2:
+  <<: *voltage
+  path: /xyz/openbmc_project/sensors/voltage/p3v3_aux
+  multiplierM: 15
+  offsetB: 0
+  bExp: 0
+0xD3:
+  <<: *voltage
+  path: /xyz/openbmc_project/sensors/voltage/p1v1_aux
+  multiplierM: 15
+  offsetB: 0
+  bExp: 0
+0xD4:
+  <<: *voltage
+  path: /xyz/openbmc_project/sensors/voltage/cpu0_vpp1
+  multiplierM: 15
+  offsetB: 0
+  bExp: 0
+0xD5:
+  <<: *voltage
+  path: /xyz/openbmc_project/sensors/voltage/cpu0_vpp2
+  multiplierM: 15
+  offsetB: 0
+  bExp: 0
+0xD6:
+  <<: *voltage
+  path: /xyz/openbmc_project/sensors/voltage/cpu1_vpp1
+  multiplierM: 15
+  offsetB: 0
+  bExp: 0
+0xD7:
+  <<: *voltage
+  path: /xyz/openbmc_project/sensors/voltage/cpu1_vpp2
+  multiplierM: 15
+  offsetB: 0
+  bExp: 0
+0xD8:
+  <<: *voltage
+  path: /xyz/openbmc_project/sensors/voltage/cpu0_vddq1
+  multiplierM: 15
+  offsetB: 0
+  bExp: 0
+0xD9:
+  <<: *voltage
+  path: /xyz/openbmc_project/sensors/voltage/cpu0_vddq2
+  multiplierM: 15
+  offsetB: 0
+  bExp: 0
+0xDA:
+  <<: *voltage
+  path: /xyz/openbmc_project/sensors/voltage/cpu1_vddq1
+  multiplierM: 15
+  offsetB: 0
+  bExp: 0
+0xDB:
+  <<: *voltage
+  path: /xyz/openbmc_project/sensors/voltage/cpu1_vddq2
+  multiplierM: 15
+  offsetB: 0
+  bExp: 0
+0xDC:
+  <<: *voltage
+  path: /xyz/openbmc_project/sensors/voltage/vbat
+  multiplierM: 15
+  offsetB: 0
+  bExp: 0
+0xDD:
+  <<: *voltage
+  path: /xyz/openbmc_project/sensors/voltage/p1v2_aux
+  multiplierM: 15
+  offsetB: 0
+  bExp: 0
+0xDE:
+  <<: *voltage
+  path: /xyz/openbmc_project/sensors/voltage/vendor_id
+  multiplierM: 15
+  offsetB: 0
+  bExp: 0
+0xDF:
+  <<: *voltage
+  path: /xyz/openbmc_project/sensors/voltage/board_id
+  multiplierM: 15
+  offsetB: 0
+  bExp: 0
+

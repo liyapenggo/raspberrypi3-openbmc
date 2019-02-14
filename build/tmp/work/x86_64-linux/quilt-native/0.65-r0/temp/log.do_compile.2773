@@ -1,0 +1,46 @@
+DEBUG: Executing shell function do_compile
+NOTE: make -j 4
+bin/quilt.in -> bin/quilt
+quilt/upgrade.in -> quilt/upgrade
+bin/guards.in -> bin/guards
+quilt/refresh.in -> quilt/refresh
+quilt/next.in -> quilt/next
+quilt/fold.in -> quilt/fold
+quilt/files.in -> quilt/files
+quilt/revert.in -> quilt/revert
+quilt/top.in -> quilt/top
+quilt/header.in -> quilt/header
+quilt/pop.in -> quilt/pop
+quilt/applied.in -> quilt/applied
+quilt/graph.in -> quilt/graph
+quilt/edit.in -> quilt/edit
+quilt/annotate.in -> quilt/annotate
+quilt/mail.in -> quilt/mail
+quilt/diff.in -> quilt/diff
+quilt/add.in -> quilt/add
+quilt/new.in -> quilt/new
+quilt/import.in -> quilt/import
+quilt/previous.in -> quilt/previous
+quilt/grep.in -> quilt/grep
+quilt/remove.in -> quilt/remove
+quilt/fork.in -> quilt/fork
+quilt/delete.in -> quilt/delete
+quilt/patches.in -> quilt/patches
+quilt/snapshot.in -> quilt/snapshot
+quilt/push.in -> quilt/push
+quilt/setup.in -> quilt/setup
+quilt/series.in -> quilt/series
+quilt/rename.in -> quilt/rename
+quilt/unapplied.in -> quilt/unapplied
+quilt/scripts/patchfns.in -> quilt/scripts/patchfns
+quilt/scripts/inspect-wrapper.in -> quilt/scripts/inspect-wrapper
+quilt/scripts/dependency-graph.in -> quilt/scripts/dependency-graph
+quilt/scripts/remove-trailing-ws.in -> quilt/scripts/remove-trailing-ws
+quilt/scripts/edmail.in -> quilt/scripts/edmail
+quilt/scripts/backup-files.in -> quilt/scripts/backup-files
+/home/roly/openbmc1/build/tmp/hosttools/pod2man bin/guards > bin/guards.1
+compat/column.in -> compat/column
+compat/sendmail.in -> compat/sendmail
+README.in -> README
+quilt.1.in -> quilt.1
+DEBUG: Shell function do_compile finished

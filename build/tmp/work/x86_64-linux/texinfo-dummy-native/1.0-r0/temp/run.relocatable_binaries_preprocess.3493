@@ -1,0 +1,61 @@
+def relocatable_binaries_preprocess(d):
+    rpath_replace(d.expand('${SYSROOT_DESTDIR}'), d)
+
+relocatable_binaries_preprocess(d)
+
+def rpath_replace (path, d):
+    bindirs = d.expand("${bindir} ${sbindir} ${base_sbindir} ${base_bindir} ${libdir} ${base_libdir} ${libexecdir} ${PREPROCESS_RELOCATE_DIRS}").split()
+
+    for bindir in bindirs:
+        #bb.note ("Processing directory " + bindir)
+        directory = path + "/" + bindir
+        process_dir (path, directory, d)
+
+def process_dir (rootdir, directory, d):
+    import stat
+
+    rootdir = os.path.normpath(rootdir)
+    cmd = d.expand('${CHRPATH_BIN}')
+    tmpdir = os.path.normpath(d.getVar('TMPDIR', False))
+    baseprefix = os.path.normpath(d.expand('${base_prefix}'))
+    hostos = d.getVar("HOST_OS")
+
+    #bb.debug("Checking %s for binaries to process" % directory)
+    if not os.path.exists(directory):
+        return
+
+    if "linux" in hostos:
+        process_file = process_file_linux
+    elif "darwin" in hostos:
+        process_file = process_file_darwin
+    else:
+        # Relocations not supported
+        return
+
+    dirs = os.listdir(directory)
+    for file in dirs:
+        fpath = directory + "/" + file
+        fpath = os.path.normpath(fpath)
+        if os.path.islink(fpath):
+            # Skip symlinks
+            continue
+
+        if os.path.isdir(fpath):
+            process_dir(rootdir, fpath, d)
+        else:
+            #bb.note("Testing %s for relocatability" % fpath)
+
+            # We need read and write permissions for chrpath, if we don't have
+            # them then set them temporarily. Take a copy of the files
+            # permissions so that we can restore them afterwards.
+            perms = os.stat(fpath)[stat.ST_MODE]
+            if os.access(fpath, os.W_OK|os.R_OK):
+                perms = None
+            else:
+                # Temporarily make the file writeable so we can chrpath it
+                os.chmod(fpath, perms|stat.S_IRWXU)
+            process_file(cmd, fpath, rootdir, baseprefix, tmpdir, d)
+
+            if perms:
+                os.chmod(fpath, perms)
+

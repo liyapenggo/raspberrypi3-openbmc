@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1550047555.18 
+texinfo-dummy-native-1.0-r0: do_prepare_recipe_sysroot
+Elapsed time: 0.01 seconds
+utime: 5
+stime: 0
+cutime: 0
+cstime: 0
+IO cancelled_write_bytes: 0
+IO syscw: 32
+IO write_bytes: 57344
+IO syscr: 17
+IO wchar: 58132
+IO rchar: 64562
+IO read_bytes: 0
+rusage ru_utime: 0.058511
+rusage ru_stime: 0.0
+rusage ru_maxrss: 104644
+rusage ru_minflt: 4243
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 112
+rusage ru_nvcsw: 0
+rusage ru_nivcsw: 2
+Child rusage ru_utime: 0.0
+Child rusage ru_stime: 0.0
+Child rusage ru_maxrss: 0
+Child rusage ru_minflt: 0
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 0
+Child rusage ru_nvcsw: 0
+Child rusage ru_nivcsw: 0
+Status: PASSED 
+Ended: 1550047555.19 

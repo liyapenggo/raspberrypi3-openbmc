@@ -1,0 +1,65 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_patch
+DEBUG: Executing python function patch_do_patch
+DEBUG: Searching for run-ptest in paths:
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+DEBUG: Searching for Makefile in paths:
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+DEBUG: Searching for test.sh in paths:
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+DEBUG: Searching for 0001-tests-Allow-different-output-from-mv.patch in paths:
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+NOTE: Applying patch '0001-tests-Allow-different-output-from-mv.patch' (../meta/recipes-devtools/quilt/quilt/0001-tests-Allow-different-output-from-mv.patch)
+NOTE: self._current is None
+NOTE: patches is [{'filemd5': '389bf64f283624f9843847e4517b7fa9', 'file': '/home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/0001-tests-Allow-different-output-from-mv.patch', 'strippath': '1'}]
+NOTE: applying patch {'filemd5': '389bf64f283624f9843847e4517b7fa9', 'file': '/home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/0001-tests-Allow-different-output-from-mv.patch', 'strippath': '1'}
+DEBUG: Python function patch_do_patch finished
+DEBUG: Python function do_patch finished

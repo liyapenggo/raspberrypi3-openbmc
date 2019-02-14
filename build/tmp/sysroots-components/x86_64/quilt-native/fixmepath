@@ -1,0 +1,6 @@
+recipe-sysroot-native/usr/share/quilt/mail
+recipe-sysroot-native/usr/share/quilt/scripts/backup-files
+recipe-sysroot-native/usr/share/quilt/scripts/remove-trailing-ws
+recipe-sysroot-native/usr/share/quilt/scripts/edmail
+recipe-sysroot-native/usr/share/quilt/scripts/patchfns
+recipe-sysroot-native/usr/bin/quilt

@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1550047568.66 
+texinfo-dummy-native-1.0-r0: do_patch
+Elapsed time: 0.03 seconds
+utime: 5
+stime: 1
+cutime: 0
+cstime: 0
+IO cancelled_write_bytes: 4096
+IO syscw: 2810
+IO write_bytes: 118784
+IO syscr: 101
+IO wchar: 108639
+IO rchar: 178270
+IO read_bytes: 0
+rusage ru_utime: 0.051386999999999995
+rusage ru_stime: 0.011857999999999999
+rusage ru_maxrss: 104688
+rusage ru_minflt: 6492
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 104
+rusage ru_nvcsw: 4
+rusage ru_nivcsw: 1
+Child rusage ru_utime: 0.002692
+Child rusage ru_stime: 0.007883
+Child rusage ru_maxrss: 99952
+Child rusage ru_minflt: 762
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 128
+Child rusage ru_nvcsw: 10
+Child rusage ru_nivcsw: 0
+Status: PASSED 
+Ended: 1550047568.69 

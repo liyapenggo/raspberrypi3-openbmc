@@ -1,0 +1,142 @@
+	$ mkdir patches
+
+# quilt should not remove symlinks to patch files
+	$ echo foo > foo
+	$ quilt new test.diff
+	> Patch patches/test.diff is now on top
+
+	$ quilt add foo
+	> File foo added to patch patches/test.diff
+
+	$ echo "foo changed" > foo
+	$ quilt refresh
+	> Refreshed patch patches/test.diff
+
+# Setup a symlink
+	$ mv patches/test.diff .
+	$ ln -s ../test.diff patches/test.diff
+	$ readlink patches/test.diff
+	> ../test.diff
+
+# Test the refresh
+	$ echo "foo changed 2" > foo
+	$ quilt refresh --no-index -p ab
+	> Refreshed patch patches/test.diff
+
+	$ readlink patches/test.diff
+	> ../test.diff
+
+# Test the refresh --backup
+	$ echo "foo changed 3" > foo
+	$ touch -r patches/test.diff test.timeref
+	$ quilt refresh --backup --no-index -p ab
+	> Refreshed patch patches/test.diff
+
+	$ readlink patches/test.diff
+	> ../test.diff
+
+	$ cat patches/test.diff
+	> --- a/foo
+	> +++ b/foo
+	> @@ -1 +1 @@
+	> -foo
+	> +foo changed 3
+
+	$ readlink patches/test.diff~
+	$ echo %{?}
+	> 1
+
+	$ cat patches/test.diff~
+	> --- a/foo
+	> +++ b/foo
+	> @@ -1 +1 @@
+	> -foo
+	> +foo changed 2
+
+	$ [ patches/test.diff~ -nt test.timeref ] && echo "mtimes differ"
+
+# Test the header update
+	$ quilt header -a
+	< A test patch
+	> Appended text to header of patch patches/test.diff
+
+	$ readlink patches/test.diff
+	> ../test.diff
+
+# Test the header update with a backup
+	$ touch -r patches/test.diff test.timeref
+	$ quilt header -r --backup
+	> Replaced header of patch patches/test.diff
+
+	$ readlink patches/test.diff
+	> ../test.diff
+
+	$ cat patches/test.diff
+	> --- a/foo
+	> +++ b/foo
+	> @@ -1 +1 @@
+	> -foo
+	> +foo changed 3
+
+	$ readlink patches/test.diff~
+	$ echo %{?}
+	> 1
+
+	$ cat patches/test.diff~
+	> A test patch
+	> --- a/foo
+	> +++ b/foo
+	> @@ -1 +1 @@
+	> -foo
+	> +foo changed 3
+
+	$ [ patches/test.diff~ -nt test.timeref ] && echo "mtimes differ"
+
+# Test the refresh when target is read-only
+	$ chmod -w test.diff
+	$ echo "foo changed 4" > foo
+	$ quilt refresh --no-index -p ab
+	> Refreshed patch patches/test.diff
+
+	$ readlink patches/test.diff
+	$ echo %{?}
+	> 1
+
+	$ cat patches/test.diff
+	> --- a/foo
+	> +++ b/foo
+	> @@ -1 +1 @@
+	> -foo
+	> +foo changed 4
+
+# Test the refresh --backup when target is read-only
+	$ rm -f test.diff
+	$ mv patches/test.diff .
+	$ ln -s ../test.diff patches/test.diff
+	$ chmod -w test.diff
+
+	$ echo "foo changed 5" > foo
+	$ quilt refresh --backup --no-index -p ab
+	> Refreshed patch patches/test.diff
+
+	$ readlink patches/test.diff
+	$ echo %{?}
+	> 1
+
+	$ cat patches/test.diff
+	> --- a/foo
+	> +++ b/foo
+	> @@ -1 +1 @@
+	> -foo
+	> +foo changed 5
+
+	$ readlink patches/test.diff~
+	$ echo %{?}
+	> 1
+
+	$ cat patches/test.diff~
+	> --- a/foo
+	> +++ b/foo
+	> @@ -1 +1 @@
+	> -foo
+	> +foo changed 4

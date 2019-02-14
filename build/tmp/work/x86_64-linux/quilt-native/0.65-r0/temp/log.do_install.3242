@@ -1,0 +1,32 @@
+DEBUG: Executing shell function do_install
+NOTE: make -j 4 BUILD_ROOT=/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image install
+/home/roly/openbmc1/build/tmp/hosttools/install -c -d /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/bin
+rm -rf /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/share/quilt/compat
+/home/roly/openbmc1/build/tmp/hosttools/install -c -d /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/share/quilt/compat
+/home/roly/openbmc1/build/tmp/hosttools/install -c -m 755 bin/quilt bin/guards /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/bin/
+/home/roly/openbmc1/build/tmp/hosttools/install -c -m 755 compat/column compat/sendmail			\
+	   /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/share/quilt/compat
+/home/roly/openbmc1/build/tmp/hosttools/install -c -d /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/share/quilt
+/home/roly/openbmc1/build/tmp/hosttools/install -c -m 755 quilt/next quilt/upgrade quilt/patches quilt/refresh quilt/files quilt/revert quilt/top quilt/header quilt/pop quilt/applied quilt/graph quilt/edit quilt/mail quilt/diff quilt/add quilt/annotate quilt/new quilt/previous quilt/grep quilt/remove quilt/fork quilt/delete quilt/fold quilt/import quilt/push quilt/setup quilt/rename quilt/unapplied quilt/snapshot quilt/series /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/share/quilt/
+/home/roly/openbmc1/build/tmp/hosttools/install -c -d /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/share/quilt/scripts
+/home/roly/openbmc1/build/tmp/hosttools/install -c -m 755 quilt/scripts/inspect-wrapper quilt/scripts/dependency-graph quilt/scripts/edmail quilt/scripts/remove-trailing-ws quilt/scripts/backup-files		\
+	   /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/share/quilt/scripts
+/home/roly/openbmc1/build/tmp/hosttools/install -c -m 644 quilt/scripts/patchfns quilt/scripts/utilfns	\
+	   /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/share/quilt/scripts
+/home/roly/openbmc1/build/tmp/hosttools/install -c -d /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/share/doc/quilt/
+/home/roly/openbmc1/build/tmp/hosttools/install -c -m 644 doc/README					\
+	   /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/share/doc/quilt/
+/home/roly/openbmc1/build/tmp/hosttools/install -c -m 644 doc/quilt.pdf doc/README.MAIL			\
+	   /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/share/doc/quilt/
+/home/roly/openbmc1/build/tmp/hosttools/install -c -d /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/share/man/man1
+/home/roly/openbmc1/build/tmp/hosttools/install -c -m 644 doc/quilt.1 bin/guards.1 /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/share/man/man1/
+/home/roly/openbmc1/build/tmp/hosttools/install -c -d /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/etc
+/home/roly/openbmc1/build/tmp/hosttools/install -c -d /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/etc/bash_completion.d
+/home/roly/openbmc1/build/tmp/hosttools/install -c -m 644 bash_completion				\
+	   /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/etc/bash_completion.d/quilt
+/home/roly/openbmc1/build/tmp/hosttools/install -c -m 644 quilt.quiltrc /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/etc/
+/home/roly/openbmc1/build/tmp/hosttools/install -c -d /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/share/emacs/site-lisp/
+/home/roly/openbmc1/build/tmp/hosttools/install -c -m 644 lib/quilt.el /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/image/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/share/emacs/site-lisp/
+DEBUG: Shell function do_install finished
+DEBUG: Executing shell function remove_libtool_la
+DEBUG: Shell function remove_libtool_la finished

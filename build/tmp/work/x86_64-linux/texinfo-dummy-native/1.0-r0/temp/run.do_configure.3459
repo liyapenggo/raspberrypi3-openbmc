@@ -1,0 +1,163 @@
+#!/bin/sh
+
+# Emit a useful diagnostic if something fails:
+bb_exit_handler() {
+    ret=$?
+    case $ret in
+    0)  ;;
+    *)  case $BASH_VERSION in
+        "") echo "WARNING: exit code $ret from a shell command.";;
+        *)  echo "WARNING: ${BASH_SOURCE[0]}:${BASH_LINENO[0]} exit $ret from '$BASH_COMMAND'";;
+        esac
+        exit $ret
+    esac
+}
+trap 'bb_exit_handler' 0
+set -e
+export AR="ar"
+export AS="as "
+export BUILD_AR="ar"
+export BUILD_AS="as "
+export BUILD_CC="gcc "
+export BUILD_CCLD="gcc "
+export BUILD_CFLAGS="-isystem/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/include -O2 -pipe"
+export BUILD_CPP="gcc  -E"
+export BUILD_CPPFLAGS="-isystem/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/include"
+export BUILD_CXX="g++ "
+export BUILD_CXXFLAGS="-isystem/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/include -O2 -pipe"
+export BUILD_FC="gfortran "
+export BUILD_LD="ld "
+export BUILD_LDFLAGS="-L/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/lib -L/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/lib -Wl,-rpath-link,/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/lib -Wl,-rpath-link,/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/lib -Wl,-rpath,/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/lib -Wl,-rpath,/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/lib -Wl,-O1"
+export BUILD_NM="nm"
+export BUILD_RANLIB="ranlib"
+export BUILD_STRIP="strip"
+export CC="gcc "
+export CCACHE_DIR="/home/roly/.ccache"
+export CCLD="gcc "
+export CFLAGS="-isystem/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/include -O2 -pipe"
+export CONFIG_SITE="/home/roly/openbmc1/meta/site/native"
+export CPP="gcc  -E"
+export CPPFLAGS="-isystem/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/include"
+export CXX="g++ "
+export CXXFLAGS="-isystem/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/include -O2 -pipe"
+unset DISTRO
+export FC="gfortran "
+export HOME="/home/roly"
+export LC_ALL="en_US.UTF-8"
+export LD="ld "
+export LDFLAGS="-L/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/lib -L/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/lib -Wl,-rpath-link,/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/lib -Wl,-rpath-link,/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/lib -Wl,-rpath,/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/lib -Wl,-rpath,/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/lib -Wl,-O1"
+export LOGNAME="roly"
+unset MACHINE
+export MAKE="make"
+export NM="nm"
+export OBJCOPY="objcopy"
+export OBJDUMP="objdump"
+export PATH="/home/roly/openbmc1/scripts/native-intercept:/home/roly/openbmc1/scripts:/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/bin:/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/sbin:/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/bin:/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/sbin:/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/bin:/home/roly/openbmc1/bitbake/bin:/home/roly/openbmc1/build/tmp/hosttools"
+export PKG_CONFIG_DIR="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/lib/texinfo-dummy-native/pkgconfig"
+export PKG_CONFIG_DISABLE_UNINSTALLED="yes"
+export PKG_CONFIG_LIBDIR="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/lib/texinfo-dummy-native/pkgconfig"
+export PKG_CONFIG_PATH="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/lib/texinfo-dummy-native/pkgconfig:/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/share/pkgconfig"
+export PKG_CONFIG_SYSROOT_DIR=""
+unset PKG_CONFIG_SYSTEM_INCLUDE_PATH
+unset PKG_CONFIG_SYSTEM_LIBRARY_PATH
+export PSEUDO_DISABLED="1"
+export PSEUDO_UNLOAD="1"
+export RANLIB="ranlib"
+export READELF="readelf"
+unset SHELL
+export STRINGS="strings"
+export STRIP="strip"
+unset TARGET_ARCH
+export TARGET_CFLAGS="-isystem/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/include -O2 -pipe"
+export TARGET_CPPFLAGS="-isystem/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/include"
+export TARGET_CXXFLAGS="-isystem/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/include -O2 -pipe"
+export TARGET_LDFLAGS="-L/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/lib -L/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/lib -Wl,-rpath-link,/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/lib -Wl,-rpath-link,/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/lib -Wl,-rpath,/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/lib -Wl,-rpath,/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/lib -Wl,-O1"
+export TERM="xterm-256color"
+export TZ="UTC"
+export USER="roly"
+export base_bindir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/bin"
+export base_libdir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/lib/texinfo-dummy-native"
+export base_prefix="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native"
+export base_sbindir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/sbin"
+export bindir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/bin/texinfo-dummy-native"
+export datadir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/share"
+export docdir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/share/doc"
+export exec_prefix="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr"
+export includedir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/include"
+export infodir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/share/info"
+export libdir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/lib/texinfo-dummy-native"
+export libexecdir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/libexec/texinfo-dummy-native"
+export localstatedir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/var"
+export lt_cv_sys_lib_dlsearch_path_spec="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/lib/texinfo-dummy-native /home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/lib/texinfo-dummy-native /lib /lib64 /usr/lib /usr/lib64"
+export mandir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/share/man"
+export nonarch_base_libdir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/lib"
+export nonarch_libdir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/lib"
+export oldincludedir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/include"
+export prefix="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr"
+export sbindir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/sbin"
+export servicedir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/srv"
+export sharedstatedir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/com"
+export sysconfdir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/etc"
+export systemd_system_unitdir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/lib/systemd/system"
+export systemd_unitdir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/lib/systemd"
+export systemd_user_unitdir="/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/usr/lib/systemd/user"
+
+do_configure() {
+    base_do_configure
+}
+
+base_do_configure() {
+	if [ -n "/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/configure.sstate" -a -e "/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/configure.sstate" ]; then
+		if [ "`cat /home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/configure.sstate`" != "15ed083ae421b4cda7697797f7b03331" ]; then
+			cd /home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0
+			if [ "0" != "1" -a \( -e Makefile -o -e makefile -o -e GNUmakefile \) ]; then
+				oe_runmake clean
+			fi
+			# -ignore_readdir_race does not work correctly with -delete;
+			# use xargs to avoid spurious build failures
+			find /home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0 -ignore_readdir_race -name \*.la -type f -print0 | xargs -0 rm -f
+		fi
+	fi
+	if [ -n "/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/configure.sstate" ]; then
+		mkdir -p `dirname /home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/configure.sstate`
+		echo 15ed083ae421b4cda7697797f7b03331 > /home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/configure.sstate
+	fi
+}
+
+oe_runmake() {
+	oe_runmake_call "$@" || die "oe_runmake failed"
+}
+
+oe_runmake_call() {
+	bbnote make  "$@"
+	make  "$@"
+}
+
+die() {
+	bbfatal_log "$*"
+}
+
+bbfatal_log() {
+	if [ -p /home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/temp/fifo.3459 ] ; then
+		printf "%b\0" "bbfatal_log $*" > /home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/temp/fifo.3459
+	else
+		echo "ERROR: $*"
+	fi
+	exit 1
+}
+
+bbnote() {
+	if [ -p /home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/temp/fifo.3459 ] ; then
+		printf "%b\0" "bbnote $*" > /home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/temp/fifo.3459
+	else
+		echo "NOTE: $*"
+	fi
+}
+
+cd '/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0'
+do_configure
+
+# cleanup
+ret=$?
+trap '' 0
+exit $ret

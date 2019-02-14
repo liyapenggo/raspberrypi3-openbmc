@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1550047569.02 
+texinfo-dummy-native-1.0-r0: do_populate_sysroot
+Elapsed time: 0.18 seconds
+utime: 13
+stime: 4
+cutime: 7
+cstime: 5
+IO cancelled_write_bytes: 0
+IO syscw: 149
+IO write_bytes: 147456
+IO syscr: 813
+IO wchar: 214554
+IO rchar: 629537
+IO read_bytes: 0
+rusage ru_utime: 0.13973
+rusage ru_stime: 0.045205999999999996
+rusage ru_maxrss: 104460
+rusage ru_minflt: 23195
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 280
+rusage ru_nvcsw: 47
+rusage ru_nivcsw: 4
+Child rusage ru_utime: 0.079681
+Child rusage ru_stime: 0.053196
+Child rusage ru_maxrss: 102480
+Child rusage ru_minflt: 18367
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 8
+Child rusage ru_nvcsw: 135
+Child rusage ru_nivcsw: 43
+Status: PASSED 
+Ended: 1550047569.21 

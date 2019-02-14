@@ -1,0 +1,8 @@
+def clean_recipe_sysroot(d):
+    # We remove these stamps since we're removing any content they'd have added with
+    # cleandirs. This removes the sigdata too, likely not a big deal,
+    oe.path.remove(d.getVar("STAMP") + "*addto_recipe_sysroot*")
+    return
+
+clean_recipe_sysroot(d)
+

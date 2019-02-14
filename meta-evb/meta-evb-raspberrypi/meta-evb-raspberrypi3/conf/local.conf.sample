@@ -1,0 +1,50 @@
+MACHINE = "raspberrypi3"
+DISTRO ?= "openbmc-phosphor"
+PACKAGE_CLASSES ?= "package_rpm"
+SANITY_TESTED_DISTROS_append ?= " *"
+EXTRA_IMAGE_FEATURES = "debug-tweaks"
+USER_CLASSES ?= "buildstats image-mklibs image-prelink"
+PATCHRESOLVE = "noop"
+BB_DISKMON_DIRS = "\
+    STOPTASKS,${TMPDIR},1G,100K \
+    STOPTASKS,${DL_DIR},1G,100K \
+    STOPTASKS,${SSTATE_DIR},1G,100K \
+    STOPTASKS,/tmp,100M,100K \
+    ABORT,${TMPDIR},100M,1K \
+    ABORT,${DL_DIR},100M,1K \
+    ABORT,${SSTATE_DIR},100M,1K \
+    ABORT,/tmp,10M,1K"
+CONF_VERSION = "1"
+
+IMAGE_FSTYPES += "ext4 tar.xz"
+KERNEL_IMAGETYPE_UBOOT = "zImage"
+KERNEL_BOOTCMD = "bootz"
+FDTFILE = "bcm2710-rpi-3-b.dtb"
+RPI_UBOOT_CMD = "earlyprintk console=ttyAMA0 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 rootwait"
+DTOVERLAY = "pi3-disable-bt"
+KERNEL_FILE = "zImage"
+ENABLE_UART = "1"
+DISABLE_SPLASH = "1"
+ENABLE_I2C = "1"
+
+FDT_LOAD_ADDR = "0x02000000"
+
+# Set the root password to '0penBmc'
+INHERIT += "extrausers"
+EXTRA_USERS_PARAMS = " \
+  usermod -p '\$1\$UGMqyqdG\$FZiylVFmRRfl9Z0Ue8G7e/' root; \
+  "
+KERNEL_FEATURES_remove = "phosphor-gpio-keys"
+
+# Overwrite flash offsets
+FLASH_UBOOT_OFFSET = "0"
+FLASH_KERNEL_OFFSET = "12288"
+FLASH_UBI_OFFSET = "${FLASH_KERNEL_OFFSET}"
+FLASH_ROFS_OFFSET = "65024"
+FLASH_RWFS_OFFSET = "122880"
+FLASH_SIZE = "3817472"
+
+require conf/machine/include/obmc-bsp-common.inc
+
+PREFERRED_PROVIDER_virtual/kernel = "linux-raspberrypi"
+PREFERRED_VERSION_linux-raspberrypi = "4.18+git%"

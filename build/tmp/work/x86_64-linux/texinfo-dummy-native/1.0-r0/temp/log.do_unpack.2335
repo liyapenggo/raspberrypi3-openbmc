@@ -1,0 +1,34 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+DEBUG: Searching for template.py in paths:
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/x86-64
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/x86-64
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/x86-64
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/
+NOTE: Unpacking /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/template.py to /home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/
+DEBUG: Searching for COPYING in paths:
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/x86-64
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/x86-64
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/x86-64
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/
+NOTE: Unpacking /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/COPYING to /home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

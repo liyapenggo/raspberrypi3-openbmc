@@ -1,0 +1,92 @@
+DEBUG: Executing python function clean_recipe_sysroot
+DEBUG: Python function clean_recipe_sysroot finished
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['http', 'download.savannah.gnu.org', '/releases/quilt/quilt-0.65.tar.gz', '', '', OrderedDict()] comparing ['bzr', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'download.savannah.gnu.org', '/releases/quilt/quilt-0.65.tar.gz', '', '', OrderedDict()] comparing ['cvs', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'download.savannah.gnu.org', '/releases/quilt/quilt-0.65.tar.gz', '', '', OrderedDict()] comparing ['git', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'download.savannah.gnu.org', '/releases/quilt/quilt-0.65.tar.gz', '', '', OrderedDict()] comparing ['gitsm', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'download.savannah.gnu.org', '/releases/quilt/quilt-0.65.tar.gz', '', '', OrderedDict()] comparing ['hg', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'download.savannah.gnu.org', '/releases/quilt/quilt-0.65.tar.gz', '', '', OrderedDict()] comparing ['osc', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'download.savannah.gnu.org', '/releases/quilt/quilt-0.65.tar.gz', '', '', OrderedDict()] comparing ['p4', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'download.savannah.gnu.org', '/releases/quilt/quilt-0.65.tar.gz', '', '', OrderedDict()] comparing ['svn', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: Trying Upstream
+DEBUG: Fetching http://download.savannah.gnu.org/releases/quilt/quilt-0.65.tar.gz using command '/usr/bin/env wget -t 2 -T 30 --passive-ftp --no-check-certificate -P /home/roly/openbmc1/build/downloads 'http://download.savannah.gnu.org/releases/quilt/quilt-0.65.tar.gz''
+DEBUG: Fetcher accessed the network with the command /usr/bin/env wget -t 2 -T 30 --passive-ftp --no-check-certificate -P /home/roly/openbmc1/build/downloads 'http://download.savannah.gnu.org/releases/quilt/quilt-0.65.tar.gz'
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:abstract=/tmp/dbus-UCnMQnFqAM"; export SSH_AUTH_SOCK="/run/user/1000/keyring/ssh"; export PATH="/home/roly/openbmc1/scripts/native-intercept:/home/roly/openbmc1/scripts:/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/bin:/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/sbin:/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/usr/bin:/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/sbin:/home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/recipe-sysroot-native/bin:/home/roly/openbmc1/bitbake/bin:/home/roly/openbmc1/build/tmp/hosttools"; export HOME="/home/roly"; /usr/bin/env wget -t 2 -T 30 --passive-ftp --no-check-certificate -P /home/roly/openbmc1/build/downloads 'http://download.savannah.gnu.org/releases/quilt/quilt-0.65.tar.gz' --progress=dot -v
+--2019-02-13 08:45:55--  http://download.savannah.gnu.org/releases/quilt/quilt-0.65.tar.gz
+Resolving download.savannah.gnu.org (download.savannah.gnu.org)... 2001:470:142:5::200, 209.51.188.200
+Connecting to download.savannah.gnu.org (download.savannah.gnu.org)|2001:470:142:5::200|:80... failed: Network is unreachable.
+Connecting to download.savannah.gnu.org (download.savannah.gnu.org)|209.51.188.200|:80... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: http://ftp.yzu.edu.tw/nongnu/quilt/quilt-0.65.tar.gz [following]
+--2019-02-13 08:45:56--  http://ftp.yzu.edu.tw/nongnu/quilt/quilt-0.65.tar.gz
+Resolving ftp.yzu.edu.tw (ftp.yzu.edu.tw)... 140.138.144.169
+Connecting to ftp.yzu.edu.tw (ftp.yzu.edu.tw)|140.138.144.169|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 410780 (401K) [application/octet-stream]
+Saving to: ‘/home/roly/openbmc1/build/downloads/quilt-0.65.tar.gz’
+
+
+2019-02-13 08:46:06 (43.1 KB/s) - ‘/home/roly/openbmc1/build/downloads/quilt-0.65.tar.gz’ saved [410780/410780]
+
+DEBUG: Searching for run-ptest in paths:
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+DEBUG: Searching for Makefile in paths:
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+DEBUG: Searching for test.sh in paths:
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+DEBUG: Searching for 0001-tests-Allow-different-output-from-mv.patch in paths:
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

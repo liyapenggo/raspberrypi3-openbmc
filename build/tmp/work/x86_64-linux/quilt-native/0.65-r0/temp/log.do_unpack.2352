@@ -1,0 +1,63 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/roly/openbmc1/build/downloads/quilt-0.65.tar.gz to /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/
+DEBUG: Searching for run-ptest in paths:
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+NOTE: Unpacking /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/run-ptest to /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/
+DEBUG: Searching for Makefile in paths:
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+NOTE: Unpacking /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/Makefile to /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/
+DEBUG: Searching for test.sh in paths:
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+NOTE: Unpacking /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/test.sh to /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/
+DEBUG: Searching for 0001-tests-Allow-different-output-from-mv.patch in paths:
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/x86-64
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-0.65/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/
+    /home/roly/openbmc1/meta/recipes-devtools/quilt/files/
+NOTE: Unpacking /home/roly/openbmc1/meta/recipes-devtools/quilt/quilt/0001-tests-Allow-different-output-from-mv.patch to /home/roly/openbmc1/build/tmp/work/x86_64-linux/quilt-native/0.65-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

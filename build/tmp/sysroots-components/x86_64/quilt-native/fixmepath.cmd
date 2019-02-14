@@ -1,0 +1,1 @@
+sed -e 's:^:FIXMEFINALSSTATEINST:g' /home/roly/openbmc1/build/tmp/sysroots-components/x86_64/quilt-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRHOST:FIXMEFINALSSTATEHOST:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/roly/openbmc1/build/tmp/hosttools:g'

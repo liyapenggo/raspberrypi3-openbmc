@@ -1,0 +1,83 @@
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.40.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "ubuntu-16.04"
+TARGET_SYS           = "arm-openbmc-linux-gnueabi"
+MACHINE              = "raspberrypi3"
+DISTRO               = "openbmc-phosphor"
+DISTRO_VERSION       = "0.1.0"
+TUNE_FEATURES        = "arm armv7ve vfp thumb neon vfpv4 callconvention-hard cortexa7"
+TARGET_FPU           = "hard"
+meta                 
+meta-poky            
+meta-oe              
+meta-networking      
+meta-python          
+meta-webserver       
+meta-phosphor        
+meta-raspberrypi     
+meta-evb             
+meta-evb-raspberrypi 
+meta-evb-raspberrypi3 = "master:f8d072428da7db7196397b1144433ba12798871a"
+
+Sstate summary: Wanted 1523 Found 0 Missed 1523 Current 0 (0% match, 0% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 1 of 4425 (/home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-native_0.65.bb:do_fetch)
+NOTE: Running task 2 of 4425 (/home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_fetch)
+NOTE: Running task 3 of 4425 (virtual:native:/home/roly/openbmc1/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_fetch)
+NOTE: Running task 4 of 4425 (/home/roly/openbmc1/meta/recipes-devtools/m4/m4-native_1.4.18.bb:do_fetch)
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_fetch: Started
+NOTE: recipe quilt-native-0.65-r0: task do_fetch: Started
+NOTE: recipe m4-native-1.4.18-r0: task do_fetch: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_fetch: Succeeded
+NOTE: Running task 5 of 4425 (/home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_unpack)
+NOTE: recipe gnu-config-native-20180713+gitAUTOINC+30d53fc428-r0: task do_fetch: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_unpack: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_unpack: Succeeded
+NOTE: Running task 6 of 4425 (/home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_prepare_recipe_sysroot)
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 7 of 4425 (virtual:native:/home/roly/openbmc1/meta/recipes-devtools/autoconf/autoconf_2.69.bb:do_fetch)
+NOTE: recipe autoconf-native-2.69-r11: task do_fetch: Started
+NOTE: recipe quilt-native-0.65-r0: task do_fetch: Succeeded
+NOTE: Running task 8 of 4425 (/home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-native_0.65.bb:do_unpack)
+NOTE: recipe quilt-native-0.65-r0: task do_unpack: Started
+NOTE: recipe quilt-native-0.65-r0: task do_unpack: Succeeded
+NOTE: Running task 9 of 4425 (/home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-native_0.65.bb:do_patch)
+NOTE: recipe quilt-native-0.65-r0: task do_patch: Started
+NOTE: recipe quilt-native-0.65-r0: task do_patch: Succeeded
+NOTE: Running task 10 of 4425 (/home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-native_0.65.bb:do_prepare_recipe_sysroot)
+NOTE: recipe quilt-native-0.65-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe quilt-native-0.65-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 11 of 4425 (/home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-native_0.65.bb:do_configure)
+NOTE: recipe quilt-native-0.65-r0: task do_configure: Started
+NOTE: recipe quilt-native-0.65-r0: task do_configure: Succeeded
+NOTE: Running task 12 of 4425 (/home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-native_0.65.bb:do_compile)
+NOTE: recipe quilt-native-0.65-r0: task do_compile: Started
+NOTE: recipe quilt-native-0.65-r0: task do_compile: Succeeded
+NOTE: Running task 13 of 4425 (/home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-native_0.65.bb:do_install)
+NOTE: recipe quilt-native-0.65-r0: task do_install: Started
+NOTE: recipe quilt-native-0.65-r0: task do_install: Succeeded
+NOTE: Running task 14 of 4425 (/home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-native_0.65.bb:do_populate_sysroot)
+NOTE: recipe quilt-native-0.65-r0: task do_populate_sysroot: Started
+NOTE: recipe quilt-native-0.65-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 15 of 4425 (/home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_patch)
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_patch: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_patch: Succeeded
+NOTE: Running task 16 of 4425 (/home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_configure)
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_configure: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_configure: Succeeded
+NOTE: Running task 17 of 4425 (/home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_compile)
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_compile: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_compile: Succeeded
+NOTE: Running task 18 of 4425 (/home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_install)
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_install: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_install: Succeeded
+NOTE: Running task 19 of 4425 (/home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_populate_sysroot)
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_populate_sysroot: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 20 of 4425 (virtual:native:/home/roly/openbmc1/meta/recipes-devtools/automake/automake_1.16.1.bb:do_fetch)
+NOTE: recipe automake-native-1.16.1-r0: task do_fetch: Started

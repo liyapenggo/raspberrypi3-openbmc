@@ -1,0 +1,36 @@
+DEBUG: Executing python function clean_recipe_sysroot
+DEBUG: Python function clean_recipe_sysroot finished
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['git', 'git.savannah.gnu.org', '/config.git', '', '', OrderedDict()] comparing ['bzr', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['git', 'git.savannah.gnu.org', '/config.git', '', '', OrderedDict()] comparing ['cvs', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['git', 'git.savannah.gnu.org', '/config.git', '', '', OrderedDict()] comparing ['git', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url git://git.savannah.gnu.org/config.git returning http://downloads.yoctoproject.org/mirror/sources/git2_git.savannah.gnu.org.config.git.tar.gz
+DEBUG: For url ['http', 'downloads.yoctoproject.org', '/mirror/sources/git2_git.savannah.gnu.org.config.git.tar.gz', '', '', OrderedDict()] comparing ['bzr', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'downloads.yoctoproject.org', '/mirror/sources/git2_git.savannah.gnu.org.config.git.tar.gz', '', '', OrderedDict()] comparing ['cvs', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'downloads.yoctoproject.org', '/mirror/sources/git2_git.savannah.gnu.org.config.git.tar.gz', '', '', OrderedDict()] comparing ['gitsm', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'downloads.yoctoproject.org', '/mirror/sources/git2_git.savannah.gnu.org.config.git.tar.gz', '', '', OrderedDict()] comparing ['hg', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'downloads.yoctoproject.org', '/mirror/sources/git2_git.savannah.gnu.org.config.git.tar.gz', '', '', OrderedDict()] comparing ['osc', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'downloads.yoctoproject.org', '/mirror/sources/git2_git.savannah.gnu.org.config.git.tar.gz', '', '', OrderedDict()] comparing ['p4', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'downloads.yoctoproject.org', '/mirror/sources/git2_git.savannah.gnu.org.config.git.tar.gz', '', '', OrderedDict()] comparing ['svn', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['git', 'git.savannah.gnu.org', '/config.git', '', '', OrderedDict()] comparing ['gitsm', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['git', 'git.savannah.gnu.org', '/config.git', '', '', OrderedDict()] comparing ['hg', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['git', 'git.savannah.gnu.org', '/config.git', '', '', OrderedDict()] comparing ['osc', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['git', 'git.savannah.gnu.org', '/config.git', '', '', OrderedDict()] comparing ['p4', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['git', 'git.savannah.gnu.org', '/config.git', '', '', OrderedDict()] comparing ['svn', '.*', '/.*', '', '', OrderedDict()] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: Fetching http://downloads.yoctoproject.org/mirror/sources/git2_git.savannah.gnu.org.config.git.tar.gz using command '/usr/bin/env wget -t 2 -T 30 --passive-ftp --no-check-certificate -P /home/roly/openbmc1/build/downloads 'http://downloads.yoctoproject.org/mirror/sources/git2_git.savannah.gnu.org.config.git.tar.gz''
+DEBUG: Fetcher accessed the network with the command /usr/bin/env wget -t 2 -T 30 --passive-ftp --no-check-certificate -P /home/roly/openbmc1/build/downloads 'http://downloads.yoctoproject.org/mirror/sources/git2_git.savannah.gnu.org.config.git.tar.gz'
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:abstract=/tmp/dbus-UCnMQnFqAM"; export SSH_AUTH_SOCK="/run/user/1000/keyring/ssh"; export PATH="/home/roly/openbmc1/scripts/native-intercept:/home/roly/openbmc1/scripts:/home/roly/openbmc1/build/tmp/work/x86_64-linux/gnu-config-native/20180713+gitAUTOINC+30d53fc428-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/roly/openbmc1/build/tmp/work/x86_64-linux/gnu-config-native/20180713+gitAUTOINC+30d53fc428-r0/recipe-sysroot-native/usr/bin:/home/roly/openbmc1/build/tmp/work/x86_64-linux/gnu-config-native/20180713+gitAUTOINC+30d53fc428-r0/recipe-sysroot-native/usr/sbin:/home/roly/openbmc1/build/tmp/work/x86_64-linux/gnu-config-native/20180713+gitAUTOINC+30d53fc428-r0/recipe-sysroot-native/usr/bin:/home/roly/openbmc1/build/tmp/work/x86_64-linux/gnu-config-native/20180713+gitAUTOINC+30d53fc428-r0/recipe-sysroot-native/sbin:/home/roly/openbmc1/build/tmp/work/x86_64-linux/gnu-config-native/20180713+gitAUTOINC+30d53fc428-r0/recipe-sysroot-native/bin:/home/roly/openbmc1/bitbake/bin:/home/roly/openbmc1/build/tmp/hosttools"; export HOME="/home/roly"; /usr/bin/env wget -t 2 -T 30 --passive-ftp --no-check-certificate -P /home/roly/openbmc1/build/downloads 'http://downloads.yoctoproject.org/mirror/sources/git2_git.savannah.gnu.org.config.git.tar.gz' --progress=dot -v
+--2019-02-13 08:45:55--  http://downloads.yoctoproject.org/mirror/sources/git2_git.savannah.gnu.org.config.git.tar.gz
+Resolving downloads.yoctoproject.org (downloads.yoctoproject.org)... 198.145.29.63
+Connecting to downloads.yoctoproject.org (downloads.yoctoproject.org)|198.145.29.63|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 928470 (907K) [application/octet-stream]
+Saving to: ‘/home/roly/openbmc1/build/downloads/git2_git.savannah.gnu.org.config.git.tar.gz’
+

@@ -1,0 +1,36 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['/home/roly/openbmc1/meta/recipes-devtools/quilt/quilt-native_0.65.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['quilt-native']
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: sed -e 's:^[^/]*/:/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native/:g' /home/roly/openbmc1/build/tmp/sysroots-components/x86_64/quilt-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRTARGET:/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot:g; s:FIXMESTAGINGDIRHOST:/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/recipe-sysroot-native:g' -e 's:FIXME_COMPONENTS_DIR:/home/roly/openbmc1/build/tmp/sysroots-components:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/roly/openbmc1/build/tmp/hosttools:g' -e 's:FIXME_PKGDATA_DIR:/home/roly/openbmc1/build/tmp/pkgdata/raspberrypi3:g' -e 's:FIXME_PSEUDO_LOCALSTATEDIR:/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/pseudo/:g' -e 's:FIXME_LOGFIFO:/home/roly/openbmc1/build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/temp/fifo.3453:g'
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_patch
+DEBUG: Executing python function patch_do_patch
+DEBUG: Searching for template.py in paths:
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/x86-64
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/x86-64
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/x86-64
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/
+DEBUG: Searching for COPYING in paths:
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/openbmc-phosphor
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/x86-64
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/x86-64
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/x86-64
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/
+    /home/roly/openbmc1/meta/recipes-extended/texinfo-dummy-native/files/
+DEBUG: Python function patch_do_patch finished
+DEBUG: Python function do_patch finished

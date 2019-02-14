@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1550047568.90 
+texinfo-dummy-native-1.0-r0: do_install
+Elapsed time: 0.06 seconds
+utime: 8
+stime: 0
+cutime: 1
+cstime: 0
+IO cancelled_write_bytes: 0
+IO syscw: 35
+IO write_bytes: 122880
+IO syscr: 339
+IO wchar: 79069
+IO rchar: 267773
+IO read_bytes: 0
+rusage ru_utime: 0.08606599999999999
+rusage ru_stime: 0.004098
+rusage ru_maxrss: 104188
+rusage ru_minflt: 7713
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 64
+rusage ru_nvcsw: 6
+rusage ru_nivcsw: 2
+Child rusage ru_utime: 0.018241999999999998
+Child rusage ru_stime: 0.005565
+Child rusage ru_maxrss: 101560
+Child rusage ru_minflt: 4301
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 176
+Child rusage ru_nvcsw: 51
+Child rusage ru_nivcsw: 0
+Status: PASSED 
+Ended: 1550047568.97 
